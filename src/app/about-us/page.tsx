@@ -21,7 +21,14 @@ export default function Page() {
             </section>
 
             <section>
-                {/* todo: need to make this working here */}
+                <div className="row">
+                    <div className="col-md-6">
+                        {/* todo: add picture here */}
+                    </div>
+                    <div className="col-md-6">
+                        {/* todo: add implementation code here */}
+                    </div>
+                </div>
             </section>
         </main>
     );
