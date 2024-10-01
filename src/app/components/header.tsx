@@ -17,7 +17,7 @@ export default function Header() {
 
                 <ul className='header__nav-container nav mb-2'>
                     <li className='nav-item '>
-                        <Link className='header__nav-item nav-link' href="">About Us</Link>
+                        <Link className='header__nav-item nav-link' href="/about-us">About Us</Link>
                     </li>
                     <li className='nav-item'>
                         <Link className='header__nav-item nav-link' href="">Projects</Link>

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownLong } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,18 +26,24 @@ export default function Home() {
 
       <section id="section-1" className="section">
         <div className="section__content">
-          <h2 className="section__heading">CREATING DIGITAL SOLUTIONS TO HELP YOU GROW</h2>
+          <h2 className="section__heading">OUR SERVICES</h2>
           <p className="section__sub-heading">Crafting Innovative and Tailored Digital Solutions Designed to Empower Your Business and Drive Sustainable Growth</p>
 
           <div className="row px-5">
             <div className="col-md-4 ">
-              <div className="menu-box"></div>
+              <Link href="">
+                <div className="menu-box"></div>
+              </Link>
             </div>
             <div className="col-md-4">
-              <div className="menu-box"></div>
+              <Link href="">
+                <div className="menu-box"></div>
+              </Link>
             </div>
             <div className="col-md-4">
-              <div className="menu-box"></div>
+              <Link href="">
+                <div className="menu-box"></div>
+              </Link>
             </div>
           </div>
 
