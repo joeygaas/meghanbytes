@@ -4,7 +4,25 @@
     }
 
     @media (min-width: '992px') {
-        .section { height: 100vh;}
-        // .banner { text-align: left;}
+        .banner {
+            .section {
+                &__content {
+                    margin-top: -200px;
+                }
+            }
+            
+        }
+        .section { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0;
+            height: 100vh;
+
+            &__content {
+                flex: 1;
+            }
+        }
     }
 }

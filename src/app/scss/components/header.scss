@@ -1,4 +1,6 @@
 .header {
+    padding-top: 30px;
+
     &__menu-btn {
         background: none; 
         border: none;
@@ -9,5 +11,14 @@
     }
     &__nav-item {
         color: #fff; 
+    }
+
+    @media (min-width: '992px') {
+        &__menu-btn {
+            display: none;
+        }
+        &__nav-container {
+            display: inline-flex;
+        }
     }
 }

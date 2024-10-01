@@ -5,16 +5,16 @@ export default function Footer() {
         <footer className="footer d-flex justify-content-center">
             <ul className="nav">
                 <li className='nav-item '>
-                    <Link className='header__nav nav-link' href="">Home</Link>
+                    <Link className='footer__nav nav-link' href="">Home</Link>
                 </li>
                 <li className='nav-item '>
-                    <Link className='header__nav nav-link' href="">About Us</Link>
+                    <Link className='footer__nav nav-link' href="">About Us</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='header__nav nav-link' href="">Projects</Link>
+                    <Link className='footer__nav nav-link' href="">Projects</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='header__nav nav-link' href="">Contact Us</Link>
+                    <Link className='footer__nav nav-link' href="">Contact Us</Link>
                 </li>
             </ul>
         </footer>
