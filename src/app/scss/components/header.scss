@@ -1,0 +1,13 @@
+.header {
+    &__menu-btn {
+        background: none; 
+        border: none;
+        color: #fff;
+    }
+    &__nav-container {
+        display:  none;
+    }
+    &__nav-item {
+        color: #fff; 
+    }
+}

@@ -1,95 +1,65 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="container home">
+      <section className="banner section">
+        <h1>WHERE INNOVATION MEETS CODE</h1>
+        <p>Turning ideas into reality, one line at a time. Embrace creativity, drive technology
+          and shape the future with us.
+        </p>
+        <button className="btn btn-primary">
+          Get in touch
+        </button>
+      </section>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <section className="section">
+        <h2>CREATING DIGITAL SOLUTIONS TO HELP YOU GROW</h2>
+        <p>Crafting Innovative and Tailored Digital Solutions Designed to Empower Your Business and Drive Sustainable Growth</p>
+
+        <div className="row px-5">
+          <div className="col-md-4 ">
+            <div className="menu-box"></div>
+          </div>
+          <div className="col-md-4">
+            <div className="menu-box"></div>
+          </div>
+          <div className="col-md-4">
+            <div className="menu-box"></div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="section">
+        <h2>CONTACT US</h2>
+        <p>
+          I'd love to hear from you! Whether you have a project in mind, need help with developer or
+          just want to connect, feel to reach out by filling up the form below.
+        </p>
+
+        <div className="row d-flex justify-content-center">
+          <div className="col-md-6">
+            <form noValidate>
+              <div className="row">
+                <div className="col-md-6 mb-3">
+                  <input type="text" className="form-control" placeholder="First Name" />
+                </div>
+                <div className="col-md-6 mb-3">
+                  <input type="text" className="form-control" placeholder="Last Name" />
+                </div>
+              </div>
+
+              <div className="col-md-12 mb-3">
+                <textarea className="form-control" placeholder="Enter you message here...">
+                </textarea>
+              </div>
+              <div className="col-md-12">
+                <button className="btn btn-primary">
+                  SEND YOUR MESSAGE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
