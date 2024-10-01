@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownLong } from '@fortawesome/free-solid-svg-icons';
+
 export default function Home() {
   return (
     <main className="container home">
@@ -10,10 +13,17 @@ export default function Home() {
           <button className="btn btn-primary">
             Get in touch
           </button>
+
+          <div className="scroll-down">
+            <a href='#section-1' className="scroll-down__btn">
+              <p className='scroll-down__btn__text'>scroll down</p>
+              <FontAwesomeIcon icon={faDownLong} />
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="section">
+      <section id="section-1" className="section">
         <div className="section__content">
           <h2 className="section__heading">CREATING DIGITAL SOLUTIONS TO HELP YOU GROW</h2>
           <p className="section__sub-heading">Crafting Innovative and Tailored Digital Solutions Designed to Empower Your Business and Drive Sustainable Growth</p>
@@ -29,10 +39,17 @@ export default function Home() {
               <div className="menu-box"></div>
             </div>
           </div>
+
+          <div className="scroll-down">
+            <a href='#section-2' className="scroll-down__btn">
+              <p className='scroll-down__btn__text'>scroll down</p>
+              <FontAwesomeIcon icon={faDownLong} />
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="section">
+      <section id="section-2" className="section">
         <div className="section__content">
           <h2 className="section__heading">CONTACT US</h2>
           <p className="section__sub-heading">

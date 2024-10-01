@@ -1,0 +1,11 @@
+.scroll-down {
+    margin-top: 100px;
+
+    &__btn {
+        text-decoration: none;
+        &__text {
+            font-size: .8rem;
+            margin: 0;
+        }
+    }
+}
